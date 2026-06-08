@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Modality Forcing: a simple post-training recipe that turns a text-to-image diffusion transformer into a joint image-depth generative model."
+    />
+    <meta
+      name="keywords"
+      content="Modality Forcing, depth estimation, text-to-image, diffusion, joint generation"
+    />
+    <title>Modality Forcing for Scalable Spatial Generation</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Noto+Sans:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --ink: #1f2733;
+        --muted: #5c6573;
+        --link: #3858a3;
+        --bg: #ffffff;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+      body {
+        background: var(--bg);
+        color: var(--ink);
+        font-family: "Noto Sans", "Google Sans", system-ui, -apple-system, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+      }
+      main {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 4rem 1.25rem;
+      }
+      .card {
+        width: 100%;
+        max-width: 880px;
+        text-align: center;
+      }
+      h1 {
+        font-family: "Google Sans", "Noto Sans", sans-serif;
+        font-weight: 700;
+        font-size: clamp(1.8rem, 4.2vw, 3rem);
+        line-height: 1.15;
+        letter-spacing: -0.01em;
+        margin: 0 0 1.6rem;
+      }
+      .authors {
+        font-size: clamp(1rem, 1.9vw, 1.25rem);
+        line-height: 1.9;
+        margin: 0 0 0.6rem;
+      }
+      .authors a {
+        color: var(--link);
+        text-decoration: none;
+      }
+      .authors a:hover {
+        text-decoration: underline;
+      }
+      .author sup {
+        color: var(--muted);
+        font-weight: 500;
+      }
+      .affil {
+        color: var(--muted);
+        font-size: clamp(0.95rem, 1.7vw, 1.1rem);
+        margin: 0.2rem 0 0;
+      }
+      .affil sup {
+        margin-right: 0.15em;
+      }
+      .venue {
+        margin-top: 1.5rem;
+        font-weight: 700;
+        color: var(--ink);
+      }
+      .soon {
+        margin-top: 1.75rem;
+        color: var(--muted);
+        font-size: 0.95rem;
+        letter-spacing: 0.02em;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="card">
+        <h1>Modality Forcing for Scalable Spatial Generation</h1>
+
+        <p class="authors">
+          <span class="author"
+            ><a href="https://bart-ai.com" target="_blank" rel="noreferrer"
+              >Bardienus Pieter Duisterhof</a
+            ><sup>1,2</sup></span
+          >,
+          <span class="author"
+            ><a href="https://www.cs.cmu.edu/~deva/" target="_blank" rel="noreferrer"
+              >Deva Ramanan</a
+            ><sup>1</sup></span
+          >,
+          <span class="author"
+            ><a href="https://ichnow.ski" target="_blank" rel="noreferrer"
+              >Jeffrey Ichnowski</a
+            ><sup>1</sup></span
+          >,
+          <span class="author"
+            ><a href="https://web.eecs.umich.edu/~justincj/" target="_blank" rel="noreferrer"
+              >Justin Johnson</a
+            ><sup>2</sup></span
+          >,
+          <span class="author"
+            ><a href="https://keunhong.com" target="_blank" rel="noreferrer"
+              >Keunhong Park</a
+            ><sup>2</sup></span
+          >
+        </p>
+
+        <p class="affil">
+          <sup>1</sup>Carnegie Mellon University &nbsp;&nbsp;
+          <sup>2</sup>World Labs
+        </p>
+
+        <p class="venue">Preprint, 2026</p>
+
+        <p class="soon">Project page coming soon.</p>
+      </div>
+    </main>
+  </body>
+</html>
