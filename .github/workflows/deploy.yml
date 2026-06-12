@@ -1,7 +1,7 @@
-name: Deploy placeholder page
+name: Deploy project page
 
-# Publishes the static placeholder (index.html at the repo root) to GitHub
-# Pages. No build step — the page is plain HTML.
+# Publishes the pre-built site (Vite build output committed at the repo root)
+# to GitHub Pages. No build step — the site is built locally with --base=/
 
 on:
   push:

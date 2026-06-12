@@ -1,14 +1,8 @@
-# Modality Forcing — project page (placeholder)
+# Modality Forcing — project page
 
-Public landing page for *Modality Forcing for Scalable Spatial Generation*
-(Duisterhof, Ramanan, Ichnowski, Johnson, Park).
+Live at https://modality-forcing.github.io/
 
-This repo currently hosts a **placeholder**: a single static `index.html` with
-the title and authors only. The full interactive project page will replace it
-before the public release.
+This repo holds the pre-built site (Vite build output, `--base=/`). The source
+lives in the development repository; build there and copy `dist/` here to update.
 
-## Deploy
-
-Pushing to `main` triggers `.github/workflows/deploy.yml`, which uploads the
-repo root (the static `index.html`) to GitHub Pages — no build step. Live at
-[modality-forcing.github.io](https://modality-forcing.github.io/).
+Paper: https://arxiv.org/abs/2606.13676
